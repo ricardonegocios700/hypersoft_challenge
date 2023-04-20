@@ -5,7 +5,6 @@ export const Background = styled.div`
   color: #ffffff;
   height: 100%;
   width: 100%;
-  padding: 8px;
   font-family: "Inter";
 `;
 
@@ -19,7 +18,7 @@ export const P = styled.p`
   font-size: 20px;
 `;
 
-export const Div = styled.p`
+export const Div = styled.div`
   ${(props) => props.w && `width: ${props.w};`};
   ${(props) => props.h && `heigth: ${props.h};`};
 `;

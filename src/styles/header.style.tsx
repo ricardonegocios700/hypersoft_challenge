@@ -6,7 +6,7 @@ import styled from "styled-components";
 //   width: 100%;
 // `;
 
-export const Header = styled.section`
+export const HeaderStyle = styled.section`
   width: 1920px;
   height: 1080px;
 `
