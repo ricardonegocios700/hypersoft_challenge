@@ -16,7 +16,7 @@ export const HeaderStyle = styled.section`
 export const DivText = styled.div`
   position: absolute;
   z-index: 2;
-  margin-top: 200px;
+  margin-top: 350px;
   margin-left: 150px;
   width: 758px;
 `;
@@ -24,8 +24,8 @@ export const DivText = styled.div`
 export const DivPhoto = styled.div`
   position: absolute;
   z-index: 1;
-  left: 600px;
-  top: 50px;
+  left: 700px;
+  top: 100px;
 `;
 
 export const DivBack = styled.div`

@@ -1,7 +1,10 @@
 import { H1, ImageContainer, P } from "@/styles/Style";
 import { DivBack, DivPhoto, DivText, HeaderStyle } from "@/styles/header.style";
+import NavBar from "../NavBar";
 
 export const Header = () => {
+  const navBarValues = ["ABOUT", "SERVICES", "WORKS", "CONTACT"];
+
   return (
     <HeaderStyle>
       <DivText>
@@ -17,7 +20,9 @@ export const Header = () => {
       <DivPhoto>
         <ImageContainer></ImageContainer>
       </DivPhoto>
-      <DivBack></DivBack>
+      <DivBack>
+        <NavBar values={navBarValues} />
+      </DivBack>
     </HeaderStyle>
   );
 };

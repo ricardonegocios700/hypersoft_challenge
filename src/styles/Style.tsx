@@ -18,7 +18,7 @@ export const P = styled.p`
   font-size: 25px;
 `;
 
-export const Div = styled.div`
+export const Div = styled.div<{w?: string; h?: string}>`
   ${(props) => props.w && `width: ${props.w};`};
   ${(props) => props.h && `heigth: ${props.h};`};
   margin-top: "236px";
