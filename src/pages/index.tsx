@@ -1,10 +1,9 @@
 import { Header } from "@/components/Header";
 import Head from "next/head";
-import Image from "next/image";
-import ricardo from "../../public/userPhoto.jpg";
-import vercel from "../../public/vercel.svg";
 
 export default function Home() {
+  const navBarValues = ["ABOUT", "SERVICES", "WORKS", "CONTACT"];
+
   return (
     <>
       <Head>

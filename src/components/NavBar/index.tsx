@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
+interface Obj {
+  name: string;
+  id: string;
+}
 interface NavBarProps {
-  values: string[];
+  values: Obj[];
 }
 
 const NavBarContainer = styled.nav`
@@ -10,7 +14,7 @@ const NavBarContainer = styled.nav`
   align-items: center;
   height: 80px;
   padding: 0 10px;
-  background-color: #7D00FF;
+  background-color: #7d00ff;
   color: #fff;
 `;
 
@@ -28,14 +32,14 @@ const NavBarLink = styled.li`
   font-weight: bold;
 `;
 
-const NavBar: React.FC<NavBarProps> = ({values}) => {
+const NavBar: React.FC<NavBarProps> = ({ values }) => {
   return (
-    <NavBarContainer >
+    <NavBarContainer>
       <NavBarLinks>
-        {values.map((i,k) => (
-        <NavBarLink key={k}>
-          <a href="#">{i}</a>
-        </NavBarLink>
+        {values.map((i, k) => (
+          <NavBarLink key={k}>
+            <a href={`#${i.id}`}>{i.name}</a>
+          </NavBarLink>
         ))}
       </NavBarLinks>
     </NavBarContainer>

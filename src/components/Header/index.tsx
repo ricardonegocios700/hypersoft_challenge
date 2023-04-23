@@ -1,12 +1,18 @@
 import { H1, ImageContainer, P } from "@/styles/Style";
 import { DivBack, DivPhoto, DivText, HeaderStyle } from "@/styles/header.style";
 import NavBar from "../NavBar";
+import { Button, DivButton } from "../Button";
 
 export const Header = () => {
-  const navBarValues = ["ABOUT", "SERVICES", "WORKS", "CONTACT"];
+  const navBarValues = [
+    { name: "ABOUT", id: "header-style" },
+    { name: "SERVICES", id: "services-style" },
+    { name: "WORKS", id: "works-style" },
+    { name: "CONTACT", id: "contact-style" },
+  ];
 
   return (
-    <HeaderStyle>
+    <HeaderStyle id="header-style">
       <DivText>
         <H1>Hello, I&apos;m John, a</H1>
         <H1 color="#7D00FF">Software Engineer.</H1>
@@ -15,6 +21,12 @@ export const Header = () => {
           the past 17 years, as an art director and designer, I’ve worked with
           big companies and up-and-coming startups.
         </P>
+        <DivButton>
+          <Button bgColor="#7D00FF" fontColor="#fff">
+            HIRE ME
+          </Button>
+          <Button bgColor="#DFE3EB" fontColor="#000">VIEW WORK</Button>
+        </DivButton>
       </DivText>
 
       <DivPhoto>
