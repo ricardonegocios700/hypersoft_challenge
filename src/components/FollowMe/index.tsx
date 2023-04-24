@@ -5,26 +5,35 @@ import twitter from "../../../public/twitter.png";
 import styled from "styled-components";
 import { Button } from "../Button";
 import Image from "next/image";
+import { Container } from "@/styles/FollowMe.style";
 
 export const FollowMe = () => {
   const mock = [
-    { name: "DRIBBBLE", image: dribble, color: "#ffffff", href: "#/link_dribble" },
-    { name: "BEHANCE", image: behance, color: "#7D00FF", href: "#/link_behance" },
+    {
+      name: "DRIBBBLE",
+      image: dribble,
+      color: "#ffffff",
+      href: "#/link_dribble",
+    },
+    {
+      name: "BEHANCE",
+      image: behance,
+      color: "#7D00FF",
+      href: "#/link_behance",
+    },
     {
       name: "FACEBOOK",
       image: facebook,
       color: "#ffffff",
       href: "#/link_facebook",
     },
-    { name: "TWITTER", image: twitter, color: "#ffffff", href: "#/link_twitter" },
+    {
+      name: "TWITTER",
+      image: twitter,
+      color: "#ffffff",
+      href: "#/link_twitter",
+    },
   ];
-
-  const Container = styled.div`
-    margin-top: 150px;
-    font-size: 25px;
-    display: flex;
-    flex-direction: column;
-  `;
 
   return (
     <Container>
