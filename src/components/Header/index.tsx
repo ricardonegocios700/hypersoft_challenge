@@ -2,9 +2,10 @@ import { H1, ImageContainer, P } from "@/styles/Style";
 import { DivBack, DivPhoto, DivText, HeaderStyle } from "@/styles/header.style";
 import NavBar from "../NavBar";
 import { Button, DivButton } from "../Button";
+import { FollowMe } from "../FollowMe";
 
 export const Header = () => {
-  const navBarValues = [
+  const mock = [
     { name: "ABOUT", id: "header-style" },
     { name: "SERVICES", id: "services-style" },
     { name: "WORKS", id: "works-style" },
@@ -27,13 +28,14 @@ export const Header = () => {
           </Button>
           <Button bgColor="#DFE3EB" fontColor="#000">VIEW WORK</Button>
         </DivButton>
+        <FollowMe></FollowMe>
       </DivText>
 
       <DivPhoto>
         <ImageContainer></ImageContainer>
       </DivPhoto>
       <DivBack>
-        <NavBar values={navBarValues} />
+        <NavBar values={mock} />
       </DivBack>
     </HeaderStyle>
   );
